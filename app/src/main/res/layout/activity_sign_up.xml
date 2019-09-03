@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/insta_backgroundpng"
+    tools:context=".SignUp">
+
+
+    <EditText
+        android:id="@+id/signName"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="237dp"
+        android:layout_marginEnd="33dp"
+        android:ems="14"
+        android:gravity="start|top"
+        android:hint="Name"
+        android:inputType="textMultiLine"
+        android:textSize="22sp" />
+
+    <EditText
+        android:id="@+id/signUsername"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signName"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="31dp"
+        android:ems="14"
+        android:gravity="start|top"
+        android:hint="Username"
+        android:inputType="textMultiLine"
+        android:textSize="22sp" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/passwordHolder"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signNumber"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="-3dp"
+        app:passwordToggleEnabled="true">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/signPassword"
+            android:layout_width="353dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:hint="Create Password"
+            android:inputType="textPassword"
+            android:textSize="22dp" />
+    </android.support.design.widget.TextInputLayout>
+
+    <EditText
+        android:id="@+id/signEmail"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signUsername"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="31dp"
+        android:ems="14"
+        android:gravity="start|top"
+        android:hint="Email Address"
+        android:inputType="textMultiLine"
+        android:textSize="22sp" />
+
+    <EditText
+        android:id="@+id/signNumber"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signEmail"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="31dp"
+        android:ems="14"
+        android:gravity="start|top"
+        android:hint="Phone Number"
+        android:inputType="textMultiLine"
+        android:textSize="22sp" />
+
+    <Button
+        android:id="@+id/signUpButton"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passwordHolder"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="31dp"
+        android:background="@drawable/button_stroke"
+        android:text="Sign Up"
+        android:textAllCaps="false"
+        />
+
+
+</RelativeLayout>
